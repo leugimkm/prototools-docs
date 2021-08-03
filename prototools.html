@@ -1335,7 +1335,7 @@ Actualizando!
 </dd></dl>
 <dl class="py function">
 <dt id="prototools.utils.boxln">
-<code class="sig-prename descclassname"><span class="pre">prototools.utils.</span></code><code class="sig-name descname"><span class="pre">boxln</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mensaje</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ancho</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">estilo</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alineacion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'&lt;'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.utils.boxln" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">prototools.utils.</span></code><code class="sig-name descname"><span class="pre">boxln</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mensaje</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ancho</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">estilo</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alineacion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'izquierda'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.utils.boxln" title="Enlazar permanentemente con esta definición">¶</a></dt>
 <dd><p>Caja con texto colorizado, por defecto blanco.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parámetros</dt>
@@ -1352,6 +1352,22 @@ la alineacion es izquierda.</p></li>
 <dd class="field-even"><p>str</p>
 </dd>
 </dl>
+<p class="rubric">Ejemplo</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">prototools.utils</span> <span class="kn">import</span> <span class="n">boxln</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">boxln</span><span class="p">(</span><span class="s1">'test'</span><span class="p">,</span> <span class="n">ancho</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+<span class="go">┌──────────────────┐</span>
+<span class="go">│Test              │</span>
+<span class="go">└──────────────────┘</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">boxln</span><span class="p">(</span><span class="s2">"Test"</span><span class="p">,</span> <span class="n">alineacion</span><span class="o">=</span><span class="s2">"centro"</span><span class="p">,</span> <span class="n">ancho</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">"verde"</span><span class="p">)</span>
+<span class="go">┌─────────────┐</span>
+<span class="go">│    Test     │</span>
+<span class="go">└─────────────┘</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">boxln</span><span class="p">(</span><span class="s2">"Test"</span><span class="p">,</span> <span class="n">estilo</span><span class="o">=</span><span class="s2">"doble"</span><span class="p">,</span> <span class="n">alineacion</span><span class="o">=</span><span class="s2">"derecha"</span><span class="p">,</span> <span class="n">ancho</span><span class="o">=</span><span class="mi">9</span><span class="p">)</span>
+<span class="go">╔═══════╗</span>
+<span class="go">║   Test║</span>
+<span class="go">╚═══════╝</span>
+</pre></div>
+</div>
 </dd></dl>
 <dl class="py function">
 <dt id="prototools.utils.caja">
