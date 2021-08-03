@@ -1293,7 +1293,18 @@ Actualizando!
 <dl class="py function">
 <dt id="prototools.utils.banner">
 <code class="sig-prename descclassname"><span class="pre">prototools.utils.</span></code><code class="sig-name descname"><span class="pre">banner</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">contenido</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ancho</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">estilo</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.utils.banner" title="Enlazar permanentemente con esta definición">¶</a></dt>
-<dd><p>Banner.</p>
+<dd><p>Coloca el retorno(str) de una funcion decorada dentro de un
+banner.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>contenido</strong> (<em>str</em>) – Contenido a ser mostrado en el banner.</p></li>
+<li><p><strong>ancho</strong> (<em>int</em>) – Ancho del banner.</p></li>
+<li><p><strong>estido</strong> (<em>str</em><em>, </em><em>optional</em>) – Estilo del borde.</p></li>
+<li><p><strong>estilo</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+</ul>
+</dd>
+</dl>
 <p class="rubric">Ejemplo</p>
 <p>Script:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@banner</span><span class="p">(</span><span class="s2">"ProtoTools"</span><span class="p">,</span> <span class="mi">12</span><span class="p">)</span>
@@ -1425,13 +1436,16 @@ la alineacion es izquierda.</p></li>
 <dl class="py function">
 <dt id="prototools.utils.continuar">
 <code class="sig-prename descclassname"><span class="pre">prototools.utils.</span></code><code class="sig-name descname"><span class="pre">continuar</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">indicacion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Desea</span> <span class="pre">continuar?</span> <span class="pre">(s/n)'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.utils.continuar" title="Enlazar permanentemente con esta definición">¶</a></dt>
-<dd><p>Realiza una pregunta</p>
+<dd><p>Realiza una pregunta (Desea continuar? (s/n))</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parámetros</dt>
 <dd class="field-odd"><p><strong>indicacion</strong> (<em>str</em>) – Indicacion a mostrar.</p>
 </dd>
-<dt class="field-even">Tipo del valor devuelto</dt>
-<dd class="field-even"><p>bool</p>
+<dt class="field-even">Devuelve</dt>
+<dd class="field-even"><p>La respuesta (Verdadero o Falso).</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto</dt>
+<dd class="field-odd"><p>bool</p>
 </dd>
 </dl>
 <p class="rubric">Ejemplo</p>
@@ -1616,8 +1630,16 @@ Hola ProtoTools!
 <p>Documentacion (incluir ejemplos) y pruebas unitarias.</p>
 </div>
 <dl class="field-list simple">
-<dt class="field-odd">Tipo del valor devuelto</dt>
-<dd class="field-odd"><p>Any</p>
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>objs</strong> (<em>dict</em>) – </p></li>
+<li><p><strong>mensaje</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>retorno</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>args</strong> (<em>Optional</em><em>[</em><em>Union</em><em>[</em><em>list</em><em>, </em><em>tuple</em><em>]</em><em>]</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Tipo del valor devuelto</dt>
+<dd class="field-even"><p>Optional[Any]</p>
 </dd>
 </dl>
 </dd></dl>
