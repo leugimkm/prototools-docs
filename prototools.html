@@ -898,6 +898,25 @@ inferior, por defecto es falso.</p></li>
 <div class="section" id="module-prototools.entradas">
 <span id="prototools-entradas-module"></span><h2>prototools.entradas module<a class="headerlink" href="#module-prototools.entradas" title="Enlazar permanentemente con este título">¶</a></h2>
 <dl class="py function">
+<dt id="prototools.entradas.entrada_choices">
+<code class="sig-prename descclassname"><span class="pre">prototools.entradas.</span></code><code class="sig-name descname"><span class="pre">entrada_choices</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">indicacion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">secuencia</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.entradas.entrada_choices" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Retorna una de las opciones presentes de la secuencia.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>indicacion</strong> (<em>str</em>) – Indicacion a mostrar en pantalla.</p></li>
+<li><p><strong>secuencia</strong> (<em>list</em><em>, </em><em>tuple</em>) – Opciones de retorno.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve</dt>
+<dd class="field-even"><p>Una opcion de las opciones presentes en la secuencia.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py function">
 <dt id="prototools.entradas.entrada_int">
 <code class="sig-prename descclassname"><span class="pre">prototools.entradas.</span></code><code class="sig-name descname"><span class="pre">entrada_int</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">indicacion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defecto</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vacio</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tiempo</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limite</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aplicar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">validar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">menor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mayor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.entradas.entrada_int" title="Enlazar permanentemente con esta definición">¶</a></dt>
 <dd><p>Pide al usuario ingresar un valor numerico entero.</p>
@@ -1726,11 +1745,14 @@ funciones evaluadas.</p></li>
 </dd></dl>
 <dl class="py function">
 <dt id="prototools.utils.timer">
-<code class="sig-prename descclassname"><span class="pre">prototools.utils.</span></code><code class="sig-name descname"><span class="pre">timer</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_funcion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.utils.timer" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">prototools.utils.</span></code><code class="sig-name descname"><span class="pre">timer</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_funcion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fondo</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.utils.timer" title="Enlazar permanentemente con esta definición">¶</a></dt>
 <dd><p>Imprime el tiempo de ejecución de la función a decorar.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parámetros</dt>
-<dd class="field-odd"><p><strong>color</strong> (<em>str</em><em>, </em><em>optional</em>) – Colorea el tiempo de ejecucion.</p>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>color</strong> (<em>str</em><em>, </em><em>optional</em>) – Colorea el tiempo de ejecucion.</p></li>
+<li><p><strong>fondo</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+</ul>
 </dd>
 </dl>
 <p class="rubric">Ejemplo</p>
@@ -1751,6 +1773,26 @@ funciones evaluadas.</p></li>
 </div>
 <div class="section" id="module-prototools.validaciones">
 <span id="prototools-validaciones-module"></span><h2>prototools.validaciones module<a class="headerlink" href="#module-prototools.validaciones" title="Enlazar permanentemente con este título">¶</a></h2>
+<dl class="py function">
+<dt id="prototools.validaciones.validar_choice">
+<code class="sig-prename descclassname"><span class="pre">prototools.validaciones.</span></code><code class="sig-name descname"><span class="pre">validar_choice</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">valor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">choices</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vacio</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strip</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numerado</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">letrado</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sensitive</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.validaciones.validar_choice" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>valor</strong> (<em>str</em>) – </p></li>
+<li><p><strong>choices</strong> (<em>Sequence</em><em>[</em><em>Any</em><em>]</em>) – </p></li>
+<li><p><strong>vacio</strong> (<em>bool</em>) – </p></li>
+<li><p><strong>strip</strong> (<em>Union</em><em>[</em><em>None</em><em>, </em><em>str</em><em>, </em><em>bool</em><em>]</em>) – </p></li>
+<li><p><strong>numerado</strong> (<em>bool</em>) – </p></li>
+<li><p><strong>letrado</strong> (<em>bool</em>) – </p></li>
+<li><p><strong>sensitive</strong> (<em>bool</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Tipo del valor devuelto</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
 <dl class="py function">
 <dt id="prototools.validaciones.validar_float">
 <code class="sig-prename descclassname"><span class="pre">prototools.validaciones.</span></code><code class="sig-name descname"><span class="pre">validar_float</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">valor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vacio</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">menor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mayor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">custom</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.validaciones.validar_float" title="Enlazar permanentemente con esta definición">¶</a></dt>
