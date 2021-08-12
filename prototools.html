@@ -137,6 +137,129 @@
 <div class="section" id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Enlazar permanentemente con este título">¶</a></h2>
 </div>
+<div class="section" id="module-prototools.algo">
+<span id="prototools-algo-module"></span><h2>prototools.algo module<a class="headerlink" href="#module-prototools.algo" title="Enlazar permanentemente con este título">¶</a></h2>
+<dl class="py function">
+<dt id="prototools.algo.binary_recursive">
+<code class="sig-prename descclassname"><span class="pre">prototools.algo.</span></code><code class="sig-name descname"><span class="pre">binary_recursive</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">left</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">right</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">item</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.algo.binary_recursive" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Binary search algorithm, recursive version.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>arr</strong> (<em>List</em><em>[</em><em>int</em><em>]</em>) – Sorted collection.</p></li>
+<li><p><strong>left</strong> (<em>int</em>) – Starting in 0.</p></li>
+<li><p><strong>right</strong> (<em>int</em>) – Starting in len(arr)-1</p></li>
+<li><p><strong>item</strong> (<em>int</em>) – Item value to search.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Tipo del valor devuelto</dt>
+<dd class="field-even"><p>Optional[int]</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Retuns:</dt><dd><p>int: Index of found value.</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py function">
+<dt id="prototools.algo.binary_search">
+<code class="sig-prename descclassname"><span class="pre">prototools.algo.</span></code><code class="sig-name descname"><span class="pre">binary_search</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">item</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.algo.binary_search" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Binary search algorithm.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>arr</strong> (<em>List</em><em>[</em><em>int</em><em>]</em>) – Sorted collection.</p></li>
+<li><p><strong>item</strong> (<em>int</em>) – Item value to search.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve</dt>
+<dd class="field-even"><p>Index of found item.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py function">
+<dt id="prototools.algo.bubble_sort">
+<code class="sig-prename descclassname"><span class="pre">prototools.algo.</span></code><code class="sig-name descname"><span class="pre">bubble_sort</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arr</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.algo.bubble_sort" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Bubble sort.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><p><strong>arr</strong> (<em>List</em><em>[</em><em>int</em><em>]</em>) – Collection.</p>
+</dd>
+<dt class="field-even">Devuelve</dt>
+<dd class="field-even"><p>Sorted collection.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto</dt>
+<dd class="field-odd"><p>List[int]</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py function">
+<dt id="prototools.algo.fibo_generator">
+<code class="sig-prename descclassname"><span class="pre">prototools.algo.</span></code><code class="sig-name descname"><span class="pre">fibo_generator</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">M</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.algo.fibo_generator" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Fibonacci generator.</p>
+</dd></dl>
+<dl class="py function">
+<dt id="prototools.algo.fibonacci">
+<code class="sig-prename descclassname"><span class="pre">prototools.algo.</span></code><code class="sig-name descname"><span class="pre">fibonacci</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cache</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{0:</span> <span class="pre">0,</span> <span class="pre">1:</span> <span class="pre">1}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.algo.fibonacci" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Recursive Fibonacci using cache.</p>
+</dd></dl>
+<dl class="py function">
+<dt id="prototools.algo.find_all">
+<code class="sig-prename descclassname"><span class="pre">prototools.algo.</span></code><code class="sig-name descname"><span class="pre">find_all</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.algo.find_all" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Returns all indexes where substring “t” occurs in string “s”.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>s</strong> (<em>str</em>) – </p></li>
+<li><p><strong>t</strong> (<em>str</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Tipo del valor devuelto</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py function">
+<dt id="prototools.algo.is_prime">
+<code class="sig-prename descclassname"><span class="pre">prototools.algo.</span></code><code class="sig-name descname"><span class="pre">is_prime</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.algo.is_prime" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Determines if a numbers is prime or not.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><p><strong>n</strong> (<em>int</em>) – Number.</p>
+</dd>
+<dt class="field-even">Devuelve</dt>
+<dd class="field-even"><p>Is prime or not.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py function">
+<dt id="prototools.algo.pigeon_hole">
+<code class="sig-prename descclassname"><span class="pre">prototools.algo.</span></code><code class="sig-name descname"><span class="pre">pigeon_hole</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arr</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.algo.pigeon_hole" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd></dd></dl>
+<dl class="py function">
+<dt id="prototools.algo.sieve">
+<code class="sig-prename descclassname"><span class="pre">prototools.algo.</span></code><code class="sig-name descname"><span class="pre">sieve</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.algo.sieve" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd></dd></dl>
+<dl class="py function">
+<dt id="prototools.algo.sieve_of_eratosthenes">
+<code class="sig-prename descclassname"><span class="pre">prototools.algo.</span></code><code class="sig-name descname"><span class="pre">sieve_of_eratosthenes</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.algo.sieve_of_eratosthenes" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Determines if a number is prime or not using Sieve of Eratosthenes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><p><strong>n</strong> (<em>int</em>) – </p>
+</dd>
+<dt class="field-even">Tipo del valor devuelto</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+</div>
 <div class="section" id="module-prototools.color">
 <span id="prototools-color-module"></span><h2>prototools.color module<a class="headerlink" href="#module-prototools.color" title="Enlazar permanentemente con este título">¶</a></h2>
 <dl class="py class">
@@ -898,8 +1021,44 @@ inferior, por defecto es falso.</p></li>
 <div class="section" id="module-prototools.entradas">
 <span id="prototools-entradas-module"></span><h2>prototools.entradas module<a class="headerlink" href="#module-prototools.entradas" title="Enlazar permanentemente con este título">¶</a></h2>
 <dl class="py function">
+<dt id="prototools.entradas.entrada_choice">
+<code class="sig-prename descclassname"><span class="pre">prototools.entradas.</span></code><code class="sig-name descname"><span class="pre">entrada_choice</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">choices</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">indicacion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'_defecto'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defecto</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vacio</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tiempo</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limite</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aplicar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">validar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strip</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numerado</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">letrado</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sensitive</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.entradas.entrada_choice" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Indica al usuario que ingrese una serie de opciones.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>choices</strong> (<em>Sequence</em><em>[</em><em>Any</em><em>]</em>) – Opciones que el usuario debe elegir.</p></li>
+<li><p><strong>indicacion</strong> (<em>str</em>) – Texto a mostrar.</p></li>
+<li><p><strong>defecto</strong> (<em>Optional</em><em>[</em><em>Any</em><em>]</em>) – Valor por defecto que se muestra si se usa un el
+parámetro “tiempo”.</p></li>
+<li><p><strong>vacio</strong> (<em>bool</em>) – Si es verdadero, acepta valores vacios.</p></li>
+<li><p><strong>tiempo</strong> (<em>Optional</em><em>[</em><em>float</em><em>]</em>) – Número de segundos disponibles para ingresar un valor</p></li>
+<li><p><strong>limite</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – Número de intentos permitidos.</p></li>
+<li><p><strong>aplicar</strong> (<em>Optional</em><em>[</em><em>Callable</em><em>]</em>) – Función opcional que usa la entrada del usuario y
+retorna un nuevo valor.</p></li>
+<li><p><strong>validar</strong> (<em>Optional</em><em>[</em><em>Callable</em><em>]</em>) – Post validación.</p></li>
+<li><p><strong>strip</strong> (<em>bool</em><em>, </em><em>str</em><em>, </em><em>None</em>) – Si es “None”, los espacios son removidos.
+Si es una cadena de texto, el texto es removido del valor.
+Si es “False”, nada es removido.</p></li>
+<li><p><strong>numerado</strong> (<em>bool</em>) – Si es “True”, tambien se aceptan numeros,
+ej: “1” o “2”.</p></li>
+<li><p><strong>letrado</strong> (<em>bool</em>) – Si es “True”, tambien se aceptan letras,
+ej: “A” o “B” o “a” o “b”.</p></li>
+<li><p><strong>sensitive</strong> (<em>bool</em>) – Si es “True”, distingue entre mayúsculas y
+minúsculas.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve</dt>
+<dd class="field-even"><p>La opcion elegida como cadena de texto.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py function">
 <dt id="prototools.entradas.entrada_choices">
-<code class="sig-prename descclassname"><span class="pre">prototools.entradas.</span></code><code class="sig-name descname"><span class="pre">entrada_choices</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">indicacion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">secuencia</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.entradas.entrada_choices" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">prototools.entradas.</span></code><code class="sig-name descname"><span class="pre">entrada_choices</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">secuencia</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">indicacion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'defecto'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.entradas.entrada_choices" title="Enlazar permanentemente con esta definición">¶</a></dt>
 <dd><p>Retorna una de las opciones presentes de la secuencia.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parámetros</dt>
@@ -913,6 +1072,30 @@ inferior, por defecto es falso.</p></li>
 </dd>
 <dt class="field-odd">Tipo del valor devuelto</dt>
 <dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py function">
+<dt id="prototools.entradas.entrada_float">
+<code class="sig-prename descclassname"><span class="pre">prototools.entradas.</span></code><code class="sig-name descname"><span class="pre">entrada_float</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">indicacion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defecto</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vacio</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tiempo</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limite</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aplicar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">validar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">menor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mayor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.entradas.entrada_float" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Pide al usuario ingresar un valor numerico flotante.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>indicacion</strong> (<em>str</em>) – Texto a mostrar.</p></li>
+<li><p><strong>defecto</strong> (<em>Optional</em><em>[</em><em>Any</em><em>]</em>) – Valor por defecto que se muestra si se usa un el
+parámetro “tiempo”.</p></li>
+<li><p><strong>vacio</strong> (<em>bool</em>) – Si es verdadero, acepta valores vacios.</p></li>
+<li><p><strong>tiempo</strong> (<em>Optional</em><em>[</em><em>float</em><em>]</em>) – Número de segundos disponibles para ingresar un valor</p></li>
+<li><p><strong>limite</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – Número de intentos permitidos.</p></li>
+<li><p><strong>aplicar</strong> (<em>Optional</em><em>[</em><em>Callable</em><em>]</em>) – Función opcional que usa la entrada del usuario y
+retorna un nuevo valor.</p></li>
+<li><p><strong>validar</strong> (<em>Optional</em><em>[</em><em>Callable</em><em>]</em>) – Función de validación opcional.</p></li>
+<li><p><strong>min</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – Valor mínimo (inclusivo).</p></li>
+<li><p><strong>max</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – Valor máximo (inclusivo).</p></li>
+<li><p><strong>menor</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – Valor mínimo (excluyente).</p></li>
+<li><p><strong>mayor</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – Valor máximo (excluyente).</p></li>
+</ul>
 </dd>
 </dl>
 </dd></dl>
@@ -937,6 +1120,43 @@ retorna un nuevo valor.</p></li>
 <li><p><strong>menor</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – Valor mínimo (excluyente).</p></li>
 <li><p><strong>mayor</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – Valor máximo (excluyente).</p></li>
 </ul>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py function">
+<dt id="prototools.entradas.entrada_menu">
+<code class="sig-prename descclassname"><span class="pre">prototools.entradas.</span></code><code class="sig-name descname"><span class="pre">entrada_menu</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">choices</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">indicacion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'_defecto'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defecto</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vacio</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tiempo</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limite</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aplicar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">validar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strip</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numerado</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">letrado</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sensitive</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.entradas.entrada_menu" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Indica al usuario que ingrese una serie de opciones.
+Tambien muestra un pequeño menu con guiones, numerado o letrado.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>choices</strong> (<em>Sequence</em><em>[</em><em>Any</em><em>]</em>) – Opciones que el usuario debe elegir.</p></li>
+<li><p><strong>indicacion</strong> (<em>str</em>) – Texto a mostrar.</p></li>
+<li><p><strong>defecto</strong> (<em>Optional</em><em>[</em><em>Any</em><em>]</em>) – Valor por defecto que se muestra si se usa un el
+parámetro “tiempo”.</p></li>
+<li><p><strong>vacio</strong> (<em>bool</em>) – Si es verdadero, acepta valores vacios.</p></li>
+<li><p><strong>tiempo</strong> (<em>Optional</em><em>[</em><em>float</em><em>]</em>) – Número de segundos disponibles para ingresar un valor</p></li>
+<li><p><strong>limite</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – Número de intentos permitidos.</p></li>
+<li><p><strong>aplicar</strong> (<em>Optional</em><em>[</em><em>Callable</em><em>]</em>) – Función opcional que usa la entrada del usuario y
+retorna un nuevo valor.</p></li>
+<li><p><strong>validar</strong> (<em>Optional</em><em>[</em><em>Callable</em><em>]</em>) – Post validación.</p></li>
+<li><p><strong>strip</strong> (<em>bool</em><em>, </em><em>str</em><em>, </em><em>None</em>) – Si es “None”, los espacios son removidos.
+Si es una cadena de texto, el texto es removido del valor.
+Si es “False”, nada es removido.</p></li>
+<li><p><strong>numerado</strong> (<em>bool</em>) – Si es “True”, tambien se aceptan numeros,
+ej: “1” o “2”.</p></li>
+<li><p><strong>letrado</strong> (<em>bool</em>) – Si es “True”, tambien se aceptan letras,
+ej: “A” o “B” o “a” o “b”.</p></li>
+<li><p><strong>sensitive</strong> (<em>bool</em>) – Si es “True”, distingue entre mayúsculas y
+minúsculas.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve</dt>
+<dd class="field-even"><p>La opcion elegida como cadena de texto.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto</dt>
+<dd class="field-odd"><p>str</p>
 </dd>
 </dl>
 </dd></dl>
@@ -987,6 +1207,12 @@ retorna un nuevo valor.</p></li>
 </dl>
 </li>
 <li><p><code class="docutils literal notranslate"><span class="pre">limite</span></code> (int): Número de intentos permitidos.</p></li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">strip</span></code> (bool, str, None): Si es “None”, los espacios son removidos.</dt><dd><p>Si es una cadena de texto, el texto es removido del valor. Si es
+“False”, nada es removido.</p>
+</dd>
+</dl>
+</li>
 <li><p><code class="docutils literal notranslate"><span class="pre">aplicar</span></code> (Callable, None): Función opcional.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">validar</span></code> (Callable, None): Función de validación opcional.</p></li>
 </ul>
@@ -1026,6 +1252,64 @@ retorna un nuevo valor.</p></li>
 <code class="sig-name descname"><span class="pre">get</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prototools.experimental.Modulo.get" title="Enlazar permanentemente con esta definición">¶</a></dt>
 <dd></dd></dl>
 </dd></dl>
+<dl class="py class">
+<dt id="prototools.experimental.Tabulado">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.experimental.</span></code><code class="sig-name descname"><span class="pre">Tabulado</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dimension</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(3,</span> <span class="pre">6)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.experimental.Tabulado" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Clase para representar una pantalla tabulada.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><p><strong>dimension</strong> (<em>Tuple</em>) – Dimension (fila, columna).</p>
+</dd>
+</dl>
+<p class="rubric">Ejemplo</p>
+<p>Script:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">t</span> <span class="o">=</span><span class="n">Tabulado</span><span class="p">(</span><span class="n">dimension</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="n">t</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s2">"Zen"</span><span class="p">,</span>        <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
+<span class="n">t</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s2">"of"</span><span class="p">,</span>         <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+<span class="n">t</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s2">"Python"</span><span class="p">,</span>     <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
+<span class="n">t</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s2">"Tim Peters"</span><span class="p">,</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
+<span class="n">t</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Zen</span>         <span class="n">of</span>          <span class="n">Python</span>
+
+                        <span class="n">Tim</span> <span class="n">Peters</span>
+</pre></div>
+</div>
+<dl class="py method">
+<dt id="prototools.experimental.Tabulado.add">
+<code class="sig-name descname"><span class="pre">add</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">valor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">posicion</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.experimental.Tabulado.add" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Metodo para añidar elementos a mostrar posteriormente.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>valor</strong> (<em>Any</em>) – valor del elemento.</p></li>
+<li><p><strong>posicion</strong> (<em>Tuple</em>) – posicion del elemento (fila, columna).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Tipo del valor devuelto</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># t es una instancia de Tabulado</span>
+<span class="n">t</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s2">"Hola Mundo"</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+</pre></div>
+</div>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.experimental.Tabulado.show">
+<code class="sig-name descname"><span class="pre">show</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">alineacion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'centro'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ancho</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.experimental.Tabulado.show" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Muestra la secuencia usando la funcion “tabulado”</p>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># t es una instancia de Tabulado</span>
+<span class="n">t</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+</dd></dl>
 <dl class="py function">
 <dt id="prototools.experimental.crear_enlace">
 <code class="sig-prename descclassname"><span class="pre">prototools.experimental.</span></code><code class="sig-name descname"><span class="pre">crear_enlace</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lista</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.experimental.crear_enlace" title="Enlazar permanentemente con esta definición">¶</a></dt>
@@ -1033,7 +1317,25 @@ retorna un nuevo valor.</p></li>
 <dl class="py function">
 <dt id="prototools.experimental.create_func">
 <code class="sig-prename descclassname"><span class="pre">prototools.experimental.</span></code><code class="sig-name descname"><span class="pre">create_func</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unique</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.experimental.create_func" title="Enlazar permanentemente con esta definición">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Crea una funcion (experimental).</p>
+</dd></dl>
+<dl class="py function">
+<dt id="prototools.experimental.main_loop">
+<code class="sig-prename descclassname"><span class="pre">prototools.experimental.</span></code><code class="sig-name descname"><span class="pre">main_loop</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">funcion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">validacion</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.experimental.main_loop" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Ejecuta una funcion hasta que la validacion sea falsa.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>funcion</strong> (<em>Callable</em>) – Funcion a iterar.</p></li>
+<li><p><strong>valicacion</strong> (<em>Callable</em>) – Funcion validadora.</p></li>
+<li><p><strong>validacion</strong> (<em>Callable</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Tipo del valor devuelto</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
 <dl class="py function">
 <dt id="prototools.experimental.modulo">
 <code class="sig-prename descclassname"><span class="pre">prototools.experimental.</span></code><code class="sig-name descname"><span class="pre">modulo</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prototools.experimental.modulo" title="Enlazar permanentemente con esta definición">¶</a></dt>
@@ -1069,6 +1371,26 @@ función (True/False):</p>
 <dt id="prototools.experimental.strip_ansi">
 <code class="sig-prename descclassname"><span class="pre">prototools.experimental.</span></code><code class="sig-name descname"><span class="pre">strip_ansi</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.experimental.strip_ansi" title="Enlazar permanentemente con esta definición">¶</a></dt>
 <dd></dd></dl>
+<dl class="py function">
+<dt id="prototools.experimental.tabulado">
+<code class="sig-prename descclassname"><span class="pre">prototools.experimental.</span></code><code class="sig-name descname"><span class="pre">tabulado</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alineacion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'centro'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ancho</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.experimental.tabulado" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Muestra una secuencia de forma tabulada.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>m</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – Secuencia a mostrar.</p></li>
+<li><p><strong>alineacion</strong> (<em>str</em>) – Alineacion de los elementos de la secuencia.</p></li>
+<li><p><strong>ancho</strong> (<em>int</em>) – Ancho de columna.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve</dt>
+<dd class="field-even"><p>Muestra la secuencia en un formato tabulado.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto</dt>
+<dd class="field-odd"><p>none</p>
+</dd>
+</dl>
+</dd></dl>
 </div>
 <div class="section" id="module-prototools.menu">
 <span id="prototools-menu-module"></span><h2>prototools.menu module<a class="headerlink" href="#module-prototools.menu" title="Enlazar permanentemente con este título">¶</a></h2>
@@ -1774,18 +2096,53 @@ funciones evaluadas.</p></li>
 <div class="section" id="module-prototools.validaciones">
 <span id="prototools-validaciones-module"></span><h2>prototools.validaciones module<a class="headerlink" href="#module-prototools.validaciones" title="Enlazar permanentemente con este título">¶</a></h2>
 <dl class="py function">
-<dt id="prototools.validaciones.validar_choice">
-<code class="sig-prename descclassname"><span class="pre">prototools.validaciones.</span></code><code class="sig-name descname"><span class="pre">validar_choice</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">valor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">choices</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vacio</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strip</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numerado</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">letrado</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sensitive</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.validaciones.validar_choice" title="Enlazar permanentemente con esta definición">¶</a></dt>
-<dd><dl class="field-list simple">
+<dt id="prototools.validaciones.validar">
+<code class="sig-prename descclassname"><span class="pre">prototools.validaciones.</span></code><code class="sig-name descname"><span class="pre">validar</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">indicacion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">secuencia</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">error</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Opción</span> <span class="pre">no</span> <span class="pre">válida!'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.validaciones.validar" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Validacion simple sin excepciones.</p>
+<dl class="field-list simple">
 <dt class="field-odd">Parámetros</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>valor</strong> (<em>str</em>) – </p></li>
-<li><p><strong>choices</strong> (<em>Sequence</em><em>[</em><em>Any</em><em>]</em>) – </p></li>
-<li><p><strong>vacio</strong> (<em>bool</em>) – </p></li>
-<li><p><strong>strip</strong> (<em>Union</em><em>[</em><em>None</em><em>, </em><em>str</em><em>, </em><em>bool</em><em>]</em>) – </p></li>
-<li><p><strong>numerado</strong> (<em>bool</em>) – </p></li>
-<li><p><strong>letrado</strong> (<em>bool</em>) – </p></li>
-<li><p><strong>sensitive</strong> (<em>bool</em>) – </p></li>
+<li><p><strong>indicacion</strong> (<em>str</em>) – Texto a mostrar.</p></li>
+<li><p><strong>secuencia</strong> (<em>Union</em><em>[</em><em>list</em><em>, </em><em>tuple</em><em>, </em><em>dict</em><em>]</em>) – Secuencia de
+la cual validar.</p></li>
+<li><p><strong>error</strong> (<em>str</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve</dt>
+<dd class="field-even"><p>Valor validado.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+<p class="rubric">Ejemplo</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">prototools.validaciones</span> <span class="kn">import</span> <span class="n">validar</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span> <span class="o">=</span> <span class="n">validar</span><span class="p">(</span><span class="s1">'Tamaño: '</span><span class="p">,</span> <span class="p">(</span><span class="s1">'pequeña'</span><span class="p">,</span> <span class="s1">'mediana'</span><span class="p">,</span> <span class="s1">'familiar'</span><span class="p">))</span>
+<span class="go">Tamaño: p</span>
+<span class="go">Tamaño: pequeña</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span>
+<span class="go">'pequeña'</span>
+</pre></div>
+</div>
+</dd></dl>
+<dl class="py function">
+<dt id="prototools.validaciones.validar_choice">
+<code class="sig-prename descclassname"><span class="pre">prototools.validaciones.</span></code><code class="sig-name descname"><span class="pre">validar_choice</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">valor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">choices</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vacio</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strip</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numerado</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">letrado</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sensitive</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.validaciones.validar_choice" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Valida una serie de opciones.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>valor</strong> (<em>str</em>) – El valor a ser validado.</p></li>
+<li><p><strong>choices</strong> (<em>Sequence</em><em>[</em><em>Any</em><em>]</em>) – Opciones.</p></li>
+<li><p><strong>vacio</strong> (<em>bool</em>) – Si es verdadero, permite el ingreso de valores
+vacíos.</p></li>
+<li><p><strong>strip</strong> (<em>None</em><em>, </em><em>str</em><em>, </em><em>bool</em>) – metodo strip().</p></li>
+<li><p><strong>numerado</strong> (<em>bool</em>) – Si es “True”, tambien se aceptan numeros,
+ej: “1” o “2”.</p></li>
+<li><p><strong>letrado</strong> (<em>bool</em>) – Si es “True”, tambien se aceptan letras,
+ej: “A” o “B” o “a” o “b”.</p></li>
+<li><p><strong>sensitive</strong> (<em>bool</em>) – Si es “True”, distingue entre mayúsculas y
+minúsculas.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Tipo del valor devuelto</dt>
@@ -1993,6 +2350,7 @@ valores vacíos, por defecto es falso.</p></li>
             <ul>
 <li><a class="reference internal" href="#">prototools package</a><ul>
 <li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-prototools.algo">prototools.algo module</a></li>
 <li><a class="reference internal" href="#module-prototools.color">prototools.color module</a></li>
 <li><a class="reference internal" href="#module-prototools.componentes">prototools.componentes module</a></li>
 <li><a class="reference internal" href="#module-prototools.config">prototools.config module</a></li>
